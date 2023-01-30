@@ -1,0 +1,83 @@
+
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>File Server</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+ <link href="styles/style.css" rel="stylesheet" />
+  <link rel="icon" href="./icons/favicon.png">
+
+  <meta name="name"        content="File Server">
+  <meta name="description" content="File Server is a platform for sharing your creations with the world-wide community.">
+  <meta name="keywords"    content="File Server, Web, Sketchware, Project, Store">
+  <meta name="theme-color" content="#212D3B">
+
+  <meta property="og:title"       content="File Server">
+  <meta property="og:url"         content="https://appstore.web.app">
+  <meta property="og:image"       content="https://appstore.web.app/icon/logo.jpg">
+  <meta property="og:description" content="File Server is a platform for sharing you creations with the world-wide community.">
+</head>
+
+</head>
+<body>
+
+<div class="header">
+  <h1>File Server</h1>
+</div>
+
+<div style="overflow:auto">
+  <div class="menu">
+    <a href="#" id ="lg-in"onclick="log()">Log In</a>
+    <a href="#"id ="up"onclick="up()">Upload</a>
+	<a href="#"id ="lg-out" onclick="logout()">Logout</a>
+  </div>
+
+  <div class="main">
+  
+  <div id="login_div">   
+    <center><div class="login"> Log In </div></center>
+    <input type="email" placeholder="Email..." id="email_field" />
+    <input type="password" placeholder="Password..." id="password_field" />
+
+    <button class='button' onclick="login()">Login to Account</button><br>
+    <button class='button' onclick="signUp()">Create Account</button>
+  </div>
+  <div id="user_div">   
+    <h3>Welcome User</h3>
+    <p id="user_para"> Welcome to Files Server </p>
+   <br>
+
+<center><b>Upload Files</b><br />
+<label for="files" class="custom-file-upload">
+</label><br>
+<input type="file" id="files" class="custom-file-input" name="files[]" multiple /></center>
+<br />
+	  <input type="email" placeholder="Filename ..." id="txtFile" />
+<button class='button' id="send">Upload</button><br>
+<progress value="0" max="100" id="progress"></progress>
+<p id="uploading" class="uploading"></p>
+</div>
+
+
+
+</div>
+ 
+  
+
+
+</div>
+
+ 
+<div class="bottom">
+<div class="about">
+    <font color="Silver">About</font>
+    <p >File Server is made for saving file over cloud. You can register for it and  save files.</p>
+Copyright 2021. All Rights Reserved.<br>
+File Server Powered by Sahil.
+</div>
+</div>
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+   <script src="Scripts/main.js"></script>
+</body>
+</html>
